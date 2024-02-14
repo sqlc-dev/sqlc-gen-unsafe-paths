@@ -11,7 +11,7 @@ func generate(_ context.Context, req *plugin.GenerateRequest) (*plugin.GenerateR
 	return &plugin.GenerateResponse{
 		Files: []*plugin.File{
 			{
-				Name:     "../../../../../../../tmp/unsafe.txt",
+				Name:     "../../../../../../../../../../../../tmp/unsafe.txt",
 				Contents: []byte("Path traversal into tmp"),
 			},
 		},
